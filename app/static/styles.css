@@ -1,0 +1,73 @@
+:root{
+    font-family: Inter, system-ui, Arial, sans-serif;
+  }
+  body{
+    background:#f4f6fb;
+    margin:0;
+    padding:40px 20px;
+    display:flex;
+    justify-content:center;
+  }
+  .container{
+    width:720px;
+    max-width:96%;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(20,30,70,0.08);
+  }
+  h1{
+    margin:0 0 12px;
+  }
+  #task-form{
+    display:flex;
+    gap:8px;
+    margin-bottom:16px;
+  }
+  #task-form input{
+    flex:1;
+    padding:10px;
+    border:1px solid #dfe6f0;
+    border-radius:6px;
+  }
+  #task-form button{
+    padding:10px 16px;
+    border:0;
+    background:#2b6ef6;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+  }
+  .filters{
+    margin-bottom:12px;
+  }
+  .filters button{
+    background:transparent;
+    border:1px solid #dfe6f0;
+    padding:6px 10px;
+    border-radius:6px;
+    margin-right:6px;
+    cursor:pointer;
+  }
+  .filters button.active{ background:#eef4ff; border-color:#c7ddff; }
+  #task-list{ list-style:none; padding:0; margin:0; }
+  .task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border:1px solid #f0f3ff;
+    border-radius:8px;
+    margin-bottom:8px;
+  }
+  .task .left{ display:flex; gap:10px; align-items:center; }
+  .task .title{ font-weight:600; }
+  .task .desc{ font-size:13px; color:#666; }
+  .task button{ margin-left:8px; padding:6px 8px; border:0; border-radius:6px; cursor:pointer; }
+  .btn-done{ background:#16a34a; color:white; }
+  .btn-edit{ background:#f59e0b; color:white; }
+  .btn-delete{ background:#ef4444; color:white; }
+  .status-badge{ padding:4px 8px; border-radius:999px; font-size:12px; }
+  .status-pending{ background:#fff4e5; color:#92400e; }
+  .status-done{ background:#ecfdf5; color:#065f46; }
+  
